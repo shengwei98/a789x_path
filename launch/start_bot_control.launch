@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="a789x_path" type="bot_control_node" name="bot_control_node" 
+output="screen" />
+            
+    <rosparam command="load" file="$(find a789x_path)/config/config.yaml"/>
+</launch>  

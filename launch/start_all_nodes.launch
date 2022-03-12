@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="a789x_path" type="range_detect_node" name="range_detect_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a789x_path" type="path_plan_node" name="path_plan_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <node pkg="a789x_path" type="bot_control_node" name="bot_control_node" output="screen" launch-prefix="gnome-terminal --command"/>
+    <rosparam command="load" file="$(find a789x_path)/config/config.yaml"/>
+</launch>
